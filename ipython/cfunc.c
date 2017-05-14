@@ -6,79 +6,81 @@
 #include <limits.h>
 #include <math.h>
 
-double P = 1.5;
-double Q = 1;
-double STEP = 0.01;
-double NOISE_LVL = 0.00001;
-double** out_crv;	
+long double P = 1.5;
+long double Q = 1;
+long double STEP = 0.01;
+long double NOISE_LVL = 0.00001;
+long double** out_crv;	
+long double singular_point_x = 1.0;
+long double singular_point_y = 1.0;
 
-double f(double x, double y)
+long double f(long double x, long double y)
 {
 	return 1-x*y;
 }
 
-double g(double x, double y)
+long double g(long double x, long double y)
 {
 	return P*y*(x-(1+Q)/(Q+y));
 }
 
-double k1(double x0, double y0)
+long double k1(long double x0, long double y0)
 {
 	return STEP*f(x0,y0);
 }
    
-double l1(double x0, double y0)
+long double l1(long double x0, long double y0)
 {
 	return STEP*g(x0,y0);
 }
 
-double k2(double x0, double y0)
+long double k2(long double x0, long double y0)
 {
     	return STEP*f(x0+k1(x0,y0)/2,y0+l1(x0,y0)/2);	
 }
  
-double l2(double x0, double y0)
+long double l2(long double x0, long double y0)
 {
     	return STEP*g(x0+k1(x0,y0)/2,y0+l1(x0,y0)/2);	
 }   
 
-double k3(double x0, double y0)
+long double k3(long double x0, long double y0)
 {
     	return STEP*f(x0+k2(x0,y0)/2,y0+l2(x0,y0)/2);	
 }
 
-double l3(double x0, double y0)
+long double l3(long double x0, long double y0)
 {
     	return STEP*g(x0+k2(x0,y0)/2,y0+l2(x0,y0)/2);	
 }
 
-double k4(double x0, double y0)
+long double k4(long double x0, long double y0)
 {
     	return STEP*f(x0+k3(x0,y0)/2,y0+l3(x0,y0)/2);	
 }
 
-double l4(double x0, double y0)
+long double l4(long double x0, long double y0)
 {
     	return STEP*g(x0+k3(x0,y0)/2,y0+l3(x0,y0)/2);	
 }
 
-void rk(double* pair)
+void rk(long double* pair)
 {
-	double x0 = pair[0];
-    	double y0 = pair[1];
-    	double x = pair[0] +1.0/6*(k1(x0,y0)+2*k2(x0,y0)+2*k3(x0,y0)+k4(x0,y0));
-   	double y = pair[1] +1.0/6*(l1(x0,y0)+2*l2(x0,y0)+2*l3(x0,y0)+l4(x0,y0));
+	long double x0 = pair[0];
+    	long double y0 = pair[1];
+    	long double x = pair[0] +1.0/6*(k1(x0,y0)+2*k2(x0,y0)+2*k3(x0,y0)+k4(x0,y0));
+   	long double y = pair[1] +1.0/6*(l1(x0,y0)+2*l2(x0,y0)+2*l3(x0,y0)+l4(x0,y0));
     	pair[0] = x;
     	pair[1] = y;
 }
     
-double** curve(double x0, double y0, int n)
+long double** curve(long double x0, long double y0, int n)
 {
 	int i = 0;
-  	double** result = (double**)malloc(2*sizeof(double*));
-    	result[0] = (double*)malloc(n*sizeof(double));
-    	result[1] = (double*)malloc(n*sizeof(double));
-    	double* current_point = (double*)malloc(2*sizeof(double));
+  	long double** result = (long double**)malloc(2*sizeof(long double*));
+    	result[0] = (long double*)malloc(n*sizeof(long double));
+    	result[1] = (long double*)malloc(n*sizeof(long double));
+    	long double* current_point = (long double*)malloc(2*sizeof(long double));
     	for(i = 0; i < n; i++)
    	{
  		result[0][i] = x0;
@@ -94,25 +96,18 @@ double** curve(double x0, double y0, int n)
 }
 
 //simple r-k curve
-double** draw_curve(double h, double new_P, double new_Q, double x, double y, int steps)
+long double** draw_curve(long double h, long double new_P, long double new_Q, long double x, long double y, int steps)
 {
 	STEP = h;
 	P = new_P;
 	Q = new_Q;
 	out_crv = curve(x,y,steps);
-	FILE* output = fopen("C_output.txt","w");
-	int i = 0;
-	for(i = 0; i <=steps; i++)
-	{
-		fprintf(output,"%.16lf %.16lf\n", out_crv[0][i],out_crv[1][i]);
-	}
-	fclose(output);
 	return out_crv;
 }
 
-double norm_rand_value_to_abs(double val, double abs_val)
+long double norm_rand_value_to_abs(long double val, long double abs_val)
 {
-	double new_val = val;
+	long double new_val = val;
 	while(fabs(new_val) > abs_val)
 	{
 		new_val = new_val/10;
@@ -121,24 +116,24 @@ double norm_rand_value_to_abs(double val, double abs_val)
 }
 
 
-void gauss_random_values(double* result)
+void gauss_random_values(long double* result)
 {
-	double x = norm_rand_value_to_abs(((double)abs(rand()))/INT_MAX, 1.0);
-	double y = norm_rand_value_to_abs(((double)abs(rand()))/INT_MAX, 1.0);
-	double x1 = sqrt(-2*log(x))*cos(2*M_PI*y);
-	double y1 = sqrt(-2*log(x))*sin(2*M_PI*y);
+	long double x = norm_rand_value_to_abs(((long double)abs(rand()))/INT_MAX, 1.0);
+	long double y = norm_rand_value_to_abs(((long double)abs(rand()))/INT_MAX, 1.0);
+	long double x1 = sqrt(-2*log(x))*cos(2*M_PI*y);
+	long double y1 = sqrt(-2*log(x))*sin(2*M_PI*y);
 	result[0]=x1;
 	result[1]=y1;
 }
 
-double** noisy_rk(double x0, double y0, int n)
+long double** noisy_rk(long double x0, long double y0, int n)
 {
 	int i = 0;
-  	double** result = (double**)malloc(2*sizeof(double*));
-    	result[0] = (double*)malloc(n*sizeof(double));
-    	result[1] = (double*)malloc(n*sizeof(double));
-    	double* current_point = (double*)malloc(2*sizeof(double));
-    	double* noise = (double*)malloc(2*sizeof(double));
+  	long double** result = (long double**)malloc(2*sizeof(long double*));
+    	result[0] = (long double*)malloc(n*sizeof(long double));
+    	result[1] = (long double*)malloc(n*sizeof(long double));
+    	long double* current_point = (long double*)malloc(2*sizeof(long double));
+    	long double* noise = (long double*)malloc(2*sizeof(long double));
     	for(i = 0; i < n; i++)
    	{
  		result[0][i] = x0;
@@ -155,21 +150,97 @@ double** noisy_rk(double x0, double y0, int n)
   	return result;
 }
 
+long double min(long double a, long double b)
+{
+	return (a<b)? a : b;
+}
 
-double** draw_noisy_curve(double noise, double h, double new_P, double new_Q, double x, double y, int steps)
+long double max(long double a, long double b)
+{
+	return (a>b)? a : b;
+}
+
+long double** find_cycle(long double p, long double q, long double step, long double eps, int iterations)
+{
+	P = p;
+	Q = q;
+	STEP = step;
+	int is_first_iter = 1;
+	int cycle_start_pos;
+	int cycle_finish_pos;
+	int i = 0;
+	long double x0;
+	long double y0;
+	long double x1;
+	long double y1;
+	long double cross = 1.1;
+	
+	long double** crv;
+	out_crv = (long double**)malloc(2*sizeof(long double*));
+	while(1)
+	{
+		cycle_start_pos = 0;
+		cycle_finish_pos = 0;
+		if(is_first_iter)
+		{
+			crv = curve(1.0,1.1,iterations);
+			is_first_iter = 0;
+		}
+		else
+		{
+			long double buf_x = crv[0][iterations-1];
+			long double buf_y = crv[1][iterations-1];
+			crv = curve(buf_x,buf_y,iterations);
+		}
+		for(i = 0; i < iterations-1; i++)
+		{
+			x0 = crv[0][i];
+           			y0 = crv[1][i];
+             		x1 = crv[0][i+1];
+             		y1 = crv[1][i+1];
+             		if((y0>=singular_point_y && y1>=singular_point_y) && ((x0-singular_point_x) * (x1-singular_point_x) < 0))
+             		{
+             			if (fabs(cross-(min(y0,y1)+fabs(y0-y1)/(fabs(x0-x1)/
+                                                     fabs((y0<=y1 ? x0 : x1)-singular_point_x))))<eps)
+             			{
+             				cycle_finish_pos+=1;
+             				out_crv[0] = (long double*)malloc((cycle_finish_pos - cycle_start_pos+2)*sizeof(long double));
+             				out_crv[1] = (long double*)malloc((cycle_finish_pos - cycle_start_pos+2)*sizeof(long double));
+             				out_crv[0][0]=cycle_finish_pos - cycle_start_pos+1;
+             				out_crv[1][0]=cycle_finish_pos - cycle_start_pos+1;
+             				int j;
+             				for(j = cycle_start_pos+1; j<=cycle_finish_pos; j++)
+             				{
+             					out_crv[0][j - cycle_start_pos] = crv[0][j];
+             					out_crv[1][j - cycle_start_pos] = crv[1][j];
+             				}
+             				free(crv[0]);
+             				free(crv[1]);
+             				free(crv);
+             				return out_crv;
+             			}
+             			else
+             			{
+             				cross = min(y0,y1)+fabs(y0-y1)/(fabs(x0-x1)/fabs((y0<=y1 ? x0 : x1)-singular_point_x));
+             				cycle_start_pos = i;
+             				cycle_finish_pos = i;	
+             			}
+             		}
+             		else
+             		{
+             			cycle_finish_pos+=1;
+             		}
+		}  
+	}
+}
+
+long double** draw_noisy_curve(long double noise, long double h, long double new_P, long double new_Q, long double x, long double y, int steps)
 {
 	NOISE_LVL = noise;
 	STEP = h;
 	P = new_P;
 	Q = new_Q;
 	out_crv = noisy_rk(x,y,steps);
-	FILE* output = fopen("C_output.txt","w");
-	int i = 0;
-	for(i = 0; i <=steps; i++)
-	{
-		fprintf(output,"%.16lf %.16lf\n", out_crv[0][i],out_crv[1][i]);
-	}
-	fclose(output);
 	return out_crv;
 }
 
