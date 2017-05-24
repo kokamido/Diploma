@@ -6,11 +6,13 @@
 #include <limits.h>
 #include <math.h>
 
+
 long double P = 1.5;
 long double Q = 1;
 long double STEP = 0.01;
 long double NOISE_LVL = 0.00001;
 long double** out_crv;	
+long double* out_arr;
 long double singular_point_x = 1.0;
 long double singular_point_y = 1.0;
 
@@ -247,9 +249,89 @@ long double** draw_noisy_curve(long double noise, long double h, long double new
 	return out_crv;
 }
 
+long double F11(long double x, long double y)
+{
+	return -y;
+}
+
+long double F12(long double x, long double y)
+{
+	return -x;
+}
+
+long double F21(long double x, long double y)
+{
+	return P*y;
+}
+
+long double F22(long double x, long double y)
+{
+	return P*x - P*Q*(1+Q)/powl((Q+y),2);
+}
+
+long double* p_vec(long double x, long double y)
+{
+	long double norm = sqrt(g(x,y)*g(x,y)+f(x,y)*f(x,y));
+	long double* result = (long double*)malloc(2*sizeof(long double));
+	result[0] = -g(x,y)/norm;
+	result[1] = f(x,y)/norm;
+	return result;
+}
+
+long double a_vec(long double x, long double y)
+{
+	long double* c_p = p_vec(x,y);
+	long double summ = F21(x,y)+F12(x,y);
+	double res = c_p[0]*(2*c_p[0]*F11(x,y)+c_p[1]*summ)+c_p[1]*(2*c_p[1]*F22(x,y)+c_p[0]*summ);
+	free(c_p);
+	return res;
+}
+
+long double r(long double x0,long double y0,long double x1,long double y1)
+{
+	return powl(M_E, (a_vec(x0,y0)+a_vec(x1,y1))/2*STEP);
+}
+
+long double phi(long double r0, long double r1)
+{
+	return (1/r0+1/r1)/2*STEP;
+}
+
+long double* get_m_list(long double nStep, long double nP, long double nQ, long double nNoise, long double* cyc0, long double* cyc1, int cyc_len)
+{
+	STEP = nStep;
+	P = nP;
+	Q = nQ;
+	NOISE_LVL = nNoise;	
+	long double* rs = (long double*)malloc(sizeof(long double)*cyc_len);
+	rs[0] = 1;
+	long double* phis = (long double*)malloc(sizeof(long double)*cyc_len);
+	phis[0] = 0;
+	int i;
+	for(i = 0; i < cyc_len-1; i++)
+	{
+		rs[i+1] = rs[i]*r(cyc0[i],cyc1[i],cyc0[i+1],cyc1[i+1]);
+		phis[i+1] = phis[i]+phi(rs[i],rs[i+1]);
+	}
+	long double c = rs[cyc_len-1]*phis[cyc_len-1]/(1-rs[cyc_len-1]);
+	out_arr = (long double*)malloc(sizeof(long double)*cyc_len);
+	for(i = 0; i < cyc_len; i++)
+	{
+		out_arr[i] = rs[i]*(c+phis[i]);
+	}
+	free(rs);
+	free(phis);
+	return out_arr;
+}
+
 void free_crv_memory()
 {
 	free(out_crv[0]);
 	free(out_crv[1]);
 	free(out_crv);
+}
+
+void free_arr_memory()
+{
+	free(out_arr);
 }
