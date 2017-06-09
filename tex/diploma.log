@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.5.7)  22 MAY 2017 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.5.7)  9 JUN 2017 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -398,6 +398,43 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 44.
+\cftparskip=\skip49
+\cftbeforetoctitleskip=\skip50
+\cftaftertoctitleskip=\skip51
+\cftbeforepartskip=\skip52
+\cftpartnumwidth=\skip53
+\cftpartindent=\skip54
+\cftbeforesecskip=\skip55
+\cftsecindent=\skip56
+\cftsecnumwidth=\skip57
+\cftbeforesubsecskip=\skip58
+\cftsubsecindent=\skip59
+\cftsubsecnumwidth=\skip60
+\cftbeforesubsubsecskip=\skip61
+\cftsubsubsecindent=\skip62
+\cftsubsubsecnumwidth=\skip63
+\cftbeforeparaskip=\skip64
+\cftparaindent=\skip65
+\cftparanumwidth=\skip66
+\cftbeforesubparaskip=\skip67
+\cftsubparaindent=\skip68
+\cftsubparanumwidth=\skip69
+\cftbeforeloftitleskip=\skip70
+\cftafterloftitleskip=\skip71
+\cftbeforefigskip=\skip72
+\cftfigindent=\skip73
+\cftfignumwidth=\skip74
+\c@lofdepth=\count139
+\c@lotdepth=\count140
+\cftbeforelottitleskip=\skip75
+\cftafterlottitleskip=\skip76
+\cftbeforetabskip=\skip77
+\cfttabindent=\skip78
+\cfttabnumwidth=\skip79
 ) (./diploma.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
 
@@ -480,6 +517,15 @@ LaTeX Warning: Label `fig:unstablefous' multiply defined.
 LaTeX Warning: Label `fig:unstablefous' multiply defined.
 
 
+LaTeX Warning: Label `fig:unstablenode' multiply defined.
+
+
+LaTeX Warning: Label `fig:unstablefous' multiply defined.
+
+
+LaTeX Warning: Label `fig:unstablenode' multiply defined.
+
+
 LaTeX Warning: Label `fig:unstablefous' multiply defined.
 
 
@@ -490,36 +536,48 @@ LaTeX Warning: Label `fig:unstablefous' multiply defined.
 
 
 LaTeX Warning: Label `fig:unstablefous' multiply defined.
+
+
+LaTeX Warning: Label `fig:unstablefous' multiply defined.
+
+
+LaTeX Warning: Label `fig:unstablenode' multiply defined.
+
+
+LaTeX Warning: Label `fig:unstablefous' multiply defined.
+
+
+LaTeX Warning: Label `fig:unstablenode' multiply defined.
 
 )
 \openout1 = `diploma.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count139
+\scratchcounter=\count141
 \scratchdimen=\dimen167
 \scratchbox=\box35
-\nofMPsegments=\count140
-\nofMParguments=\count141
+\nofMPsegments=\count142
+\nofMParguments=\count143
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count142
+\MPscratchCnt=\count144
 \MPscratchDim=\dimen168
-\MPnumerator=\count143
-\makeMPintoPDFobject=\count144
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
 \everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
@@ -613,11 +671,11 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 (./diploma.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -632,9 +690,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [4
 
 ]
-[5] [6
+[5
 
-] [7
+] [6
 
 ]
 Overfull \hbox (5.8982pt too wide) in paragraph at lines 53--54
@@ -642,7 +700,7 @@ Overfull \hbox (5.8982pt too wide) in paragraph at lines 53--54
 о-сти непо-движ-
  []
 
-[8
+[7
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 74--76
@@ -653,7 +711,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--76
 LaTeX Warning: Command \CYRA invalid in math mode on input line 77.
 
 Missing character: There is no А in font cmr12!
-<pics/bifurcation_plot.png, id=36, 609.27625pt x 576.1525pt>
+<pics/bifurcation_plot.png, id=33, 609.27625pt x 576.1525pt>
 File: pics/bifurcation_plot.png Graphic file (type png)
 
 <use pics/bifurcation_plot.png>
@@ -663,29 +721,29 @@ Package pdftex.def Info: pics/bifurcation_plot.png used on input line 91.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pics/nodeP=005Q=1.png, id=38, 618.31pt x 598.235pt>
+<pics/nodeP=005Q=1.png, id=35, 618.31pt x 598.235pt>
 File: pics/nodeP=005Q=1.png Graphic file (type png)
 
 <use pics/nodeP=005Q=1.png>
 Package pdftex.def Info: pics/nodeP=005Q=1.png used on input line 99.
 (pdftex.def)             Requested size: 211.26028pt x 204.40132pt.
 
-<pics/focusP=07Q=1.png, id=39, 625.33624pt x 598.235pt>
+<pics/focusP=07Q=1.png, id=36, 625.33624pt x 598.235pt>
 File: pics/focusP=07Q=1.png Graphic file (type png)
 
 <use pics/focusP=07Q=1.png>
 Package pdftex.def Info: pics/focusP=07Q=1.png used on input line 103.
 (pdftex.def)             Requested size: 211.26028pt x 202.10098pt.
- [9] [10 <./pics/bifurcation_plot.png> <./pics/nodeP=005Q=1.png> <./pics/focusP
-=07Q=1.png>]
-<pics/focusP=2_5Q=1.png, id=51, 609.27625pt x 598.235pt>
+ [8] [9 <./pics/bifurcation_plot.png> <./pics/nodeP=005Q=1.png> <./pics/focusP=
+07Q=1.png>]
+<pics/focusP=2_5Q=1.png, id=48, 609.27625pt x 598.235pt>
 File: pics/focusP=2_5Q=1.png Graphic file (type png)
 
 <use pics/focusP=2_5Q=1.png>
 Package pdftex.def Info: pics/focusP=2_5Q=1.png used on input line 112.
 (pdftex.def)             Requested size: 211.26028pt x 207.43192pt.
 
-<pics/nodeP=12_5Q=1.png, id=52, 615.29875pt x 598.235pt>
+<pics/nodeP=12_5Q=1.png, id=49, 615.29875pt x 598.235pt>
 File: pics/nodeP=12_5Q=1.png Graphic file (type png)
 
 <use pics/nodeP=12_5Q=1.png>
@@ -696,35 +754,35 @@ Underfull \hbox (badness 7595) in paragraph at lines 116--118
 \T2A/cmr/m/n/14.4 Ри-су-нок 3.5 --- неустой-чи-вый
  []
 
-[11
+[10
 
  <./pics/focusP=2_5Q=1.png> <./pics/nodeP=12_5Q=1.png>]
-<pics/cycp3.png, id=58, 609.27625pt x 598.235pt>
+<pics/cycp3.png, id=55, 609.27625pt x 598.235pt>
 File: pics/cycp3.png Graphic file (type png)
  <use pics/cycp3.png>
 Package pdftex.def Info: pics/cycp3.png used on input line 130.
 (pdftex.def)             Requested size: 211.26028pt x 207.43192pt.
 
-<pics/cycp5.png, id=59, 615.29875pt x 598.235pt>
+<pics/cycp5.png, id=56, 615.29875pt x 598.235pt>
 File: pics/cycp5.png Graphic file (type png)
  <use pics/cycp5.png>
 Package pdftex.def Info: pics/cycp5.png used on input line 134.
 (pdftex.def)             Requested size: 211.26028pt x 205.3963pt.
 
-<pics/cycp7.png, id=60, 615.29875pt x 598.235pt>
+<pics/cycp7.png, id=57, 615.29875pt x 598.235pt>
 File: pics/cycp7.png Graphic file (type png)
  <use pics/cycp7.png>
 Package pdftex.def Info: pics/cycp7.png used on input line 141.
 (pdftex.def)             Requested size: 211.26028pt x 205.3963pt.
 
-<pics/cycp12.png, id=61, 615.29875pt x 598.235pt>
+<pics/cycp12.png, id=58, 615.29875pt x 598.235pt>
 File: pics/cycp12.png Graphic file (type png)
  <use pics/cycp12.png>
 Package pdftex.def Info: pics/cycp12.png used on input line 145.
 (pdftex.def)             Requested size: 211.26028pt x 205.3963pt.
 
-[12 <./pics/cycp3.png> <./pics/cycp5.png>]
-<pics/timerowx.png, id=67, 618.31pt x 598.235pt>
+[11 <./pics/cycp3.png> <./pics/cycp5.png>]
+<pics/timerowx.png, id=64, 618.31pt x 598.235pt>
 File: pics/timerowx.png Graphic file (type png)
  <use pics/timerowx.png>
 Package pdftex.def Info: pics/timerowx.png used on input line 152.
@@ -734,215 +792,270 @@ File: pics/timerowx.png Graphic file (type png)
 <use pics/timerowx.png>
 Package pdftex.def Info: pics/timerowx.png used on input line 156.
 (pdftex.def)             Requested size: 211.26028pt x 204.40132pt.
- [13 <./pics/cycp7.png> <./pics/cycp12.png> <./pics/timerowx.png>] <pics/multip
-licator.png, id=75, 618.31pt x 598.235pt>
+ [12 <./pics/cycp7.png> <./pics/cycp12.png> <./pics/timerowx.png>] <pics/multip
+licator.png, id=71, 618.31pt x 598.235pt>
 File: pics/multiplicator.png Graphic file (type png)
 
 <use pics/multiplicator.png>
 Package pdftex.def Info: pics/multiplicator.png used on input line 173.
 (pdftex.def)             Requested size: 259.68843pt x 251.25699pt.
- [14]
-Overfull \hbox (5.12202pt too wide) in paragraph at lines 185--186
-[] \T2A/cmr/m/n/14.4 При вне-се-нии воз-му-ще-ний в тра-ек-то-рии, про-хо-дя-щи
-е в окрест-но-сти устой-
- []
-
-<pics/N0_1p0_2q1.png, id=80, 623.32875pt x 598.235pt>
+ [13]
+<pics/N0_1p0_2q1.png, id=77, 618.31pt x 598.235pt>
 File: pics/N0_1p0_2q1.png Graphic file (type png)
+ <use pics/N0_1p0_2q1.png>
+Package pdftex.def Info: pics/N0_1p0_2q1.png used on input line 188.
+(pdftex.def)             Requested size: 211.26028pt x 204.40132pt.
 
-<use pics/N0_1p0_2q1.png>
-Package pdftex.def Info: pics/N0_1p0_2q1.png used on input line 189.
-(pdftex.def)             Requested size: 211.26028pt x 202.75822pt.
-
-<pics/N0_1p1_4q1.png, id=81, 625.33624pt x 598.235pt>
+<pics/N0_1p1_4q1.png, id=78, 626.34pt x 598.235pt>
 File: pics/N0_1p1_4q1.png Graphic file (type png)
+ <use pics/N0_1p1_4q1.png>
+Package pdftex.def Info: pics/N0_1p1_4q1.png used on input line 192.
+(pdftex.def)             Requested size: 211.26028pt x 201.7815pt.
 
-<use pics/N0_1p1_4q1.png>
-Package pdftex.def Info: pics/N0_1p1_4q1.png used on input line 193.
-(pdftex.def)             Requested size: 211.26028pt x 202.10098pt.
- [15 <./pics/multiplicator.png>]
-<pics/dispN.png, id=86, 631.35875pt x 576.1525pt>
+[14 <./pics/multiplicator.png>]
+<pics/dispN.png, id=83, 631.35875pt x 576.1525pt>
 File: pics/dispN.png Graphic file (type png)
  <use pics/dispN.png>
-Package pdftex.def Info: pics/dispN.png used on input line 202.
+Package pdftex.def Info: pics/dispN.png used on input line 200.
 (pdftex.def)             Requested size: 201.86887pt x 184.21431pt.
 
-Underfull \hbox (badness 2951) in paragraph at lines 202--204
+Underfull \hbox (badness 2951) in paragraph at lines 200--202
 \T2A/cmr/m/n/14.4 Ри-су-нок 3.15 --- За-ви-си-мость
  []
 
-<pics/dispNP01.png, id=87, 637.38126pt x 598.235pt>
+<pics/dispNP01.png, id=84, 631.35875pt x 576.1525pt>
 File: pics/dispNP01.png Graphic file (type png)
  <use pics/dispNP01.png>
-Package pdftex.def Info: pics/dispNP01.png used on input line 206.
-(pdftex.def)             Requested size: 201.86887pt x 189.46739pt.
+Package pdftex.def Info: pics/dispNP01.png used on input line 204.
+(pdftex.def)             Requested size: 201.86887pt x 184.21431pt.
 
-Underfull \hbox (badness 2951) in paragraph at lines 206--208
+Underfull \hbox (badness 2951) in paragraph at lines 204--206
 \T2A/cmr/m/n/14.4 Ри-су-нок 3.16 --- За-ви-си-мость
  []
 
-<pics/dispP.png, id=88, 619.31375pt x 594.22pt>
+<pics/dispP.png, id=85, 619.31375pt x 594.22pt>
 File: pics/dispP.png Graphic file (type png)
  <use pics/dispP.png>
-Package pdftex.def Info: pics/dispP.png used on input line 214.
+Package pdftex.def Info: pics/dispP.png used on input line 212.
 (pdftex.def)             Requested size: 225.34383pt x 216.213pt.
 
-<pics/dispPP01.png, id=89, 619.31375pt x 594.22pt>
+<pics/dispPP01.png, id=86, 609.27625pt x 576.1525pt>
 File: pics/dispPP01.png Graphic file (type png)
  <use pics/dispPP01.png>
-Package pdftex.def Info: pics/dispPP01.png used on input line 218.
-(pdftex.def)             Requested size: 225.34383pt x 216.213pt.
+Package pdftex.def Info: pics/dispPP01.png used on input line 216.
+(pdftex.def)             Requested size: 225.34383pt x 213.09395pt.
 
-[16 <./pics/N0_1p0_2q1.png> <./pics/N0_1p1_4q1.png> <./pics/dispN.png> <./pics/
-dispNP01.png>] <pics/NoisyCurveP0_7Q1.png, id=97, 625.33624pt x 598.235pt>
+[15 <./pics/N0_1p0_2q1.png> <./pics/N0_1p1_4q1.png> <./pics/dispN.png> <./pics/
+dispNP01.png>] <pics/NoisyCurveP0_7Q1.png, id=94, 625.33624pt x 598.235pt>
 File: pics/NoisyCurveP0_7Q1.png Graphic file (type png)
 
 <use pics/NoisyCurveP0_7Q1.png>
-Package pdftex.def Info: pics/NoisyCurveP0_7Q1.png used on input line 228.
+Package pdftex.def Info: pics/NoisyCurveP0_7Q1.png used on input line 226.
 (pdftex.def)             Requested size: 230.0431pt x 220.07465pt.
 
-Underfull \hbox (badness 4621) in paragraph at lines 228--230
+Underfull \hbox (badness 4621) in paragraph at lines 226--228
 \T2A/cmr/m/n/14.4 липс и тра-ек-то-рия, $\OML/cmm/m/it/14.4 p$\T2A/cmr/m/n/14.4
  =0.7, $\OML/cmm/m/it/14.4 q$\T2A/cmr/m/n/14.4 =1,
  []
 
-<pics/NoisyCurveP1_9Q1.png, id=98, 618.31pt x 598.235pt>
+<pics/NoisyCurveP1_9Q1.png, id=95, 618.31pt x 598.235pt>
 File: pics/NoisyCurveP1_9Q1.png Graphic file (type png)
 
 <use pics/NoisyCurveP1_9Q1.png>
-Package pdftex.def Info: pics/NoisyCurveP1_9Q1.png used on input line 232.
+Package pdftex.def Info: pics/NoisyCurveP1_9Q1.png used on input line 230.
 (pdftex.def)             Requested size: 230.0431pt x 222.5758pt.
 
-Underfull \hbox (badness 4621) in paragraph at lines 232--234
+Underfull \hbox (badness 4621) in paragraph at lines 230--232
 \T2A/cmr/m/n/14.4 липс и тра-ек-то-рия, $\OML/cmm/m/it/14.4 p$\T2A/cmr/m/n/14.4
  =1.9, $\OML/cmm/m/it/14.4 q$\T2A/cmr/m/n/14.4 =1,
  []
 
-[17 <./pics/dispP.png> <./pics/dispPP01.png>]
-<pics/NoisyCurveP0_2Q0_1.png, id=104, 625.33624pt x 598.235pt>
+[16 <./pics/dispP.png> <./pics/dispPP01.png>]
+<pics/NoisyCurveP0_2Q0_1.png, id=101, 625.33624pt x 598.235pt>
 File: pics/NoisyCurveP0_2Q0_1.png Graphic file (type png)
 
 <use pics/NoisyCurveP0_2Q0_1.png>
-Package pdftex.def Info: pics/NoisyCurveP0_2Q0_1.png used on input line 240.
+Package pdftex.def Info: pics/NoisyCurveP0_2Q0_1.png used on input line 238.
 (pdftex.def)             Requested size: 230.0431pt x 220.07465pt.
 
-Underfull \hbox (badness 1430) in paragraph at lines 240--242
+Underfull \hbox (badness 1430) in paragraph at lines 238--240
 \T2A/cmr/m/n/14.4 липс и тра-ек-то-рия, $\OML/cmm/m/it/14.4 p$\T2A/cmr/m/n/14.4
  =0.2, $\OML/cmm/m/it/14.4 q$\T2A/cmr/m/n/14.4 =0.1,
  []
 
-<pics/NoisyCurveP0_8Q0_1.png, id=105, 625.33624pt x 598.235pt>
+<pics/NoisyCurveP0_8Q0_1.png, id=102, 625.33624pt x 598.235pt>
 File: pics/NoisyCurveP0_8Q0_1.png Graphic file (type png)
 
 <use pics/NoisyCurveP0_8Q0_1.png>
-Package pdftex.def Info: pics/NoisyCurveP0_8Q0_1.png used on input line 244.
+Package pdftex.def Info: pics/NoisyCurveP0_8Q0_1.png used on input line 242.
 (pdftex.def)             Requested size: 230.0431pt x 220.07465pt.
 
-Underfull \hbox (badness 1430) in paragraph at lines 244--246
+Underfull \hbox (badness 1430) in paragraph at lines 242--244
 \T2A/cmr/m/n/14.4 липс и тра-ек-то-рия, $\OML/cmm/m/it/14.4 p$\T2A/cmr/m/n/14.4
  =0.8, $\OML/cmm/m/it/14.4 q$\T2A/cmr/m/n/14.4 =0.1,
  []
 
-[18 <./pics/NoisyCurveP0_7Q1.png> <./pics/NoisyCurveP1_9Q1.png> <./pics/NoisyCu
+[17 <./pics/NoisyCurveP0_7Q1.png> <./pics/NoisyCurveP1_9Q1.png> <./pics/NoisyCu
 rveP0_2Q0_1.png> <./pics/NoisyCurveP0_8Q0_1.png>]
-<pics/ellp0_9q0_1n0_001.png, id=113, 625.33624pt x 598.235pt>
+<pics/ellp0_9q0_1n0_001.png, id=110, 625.33624pt x 598.235pt>
 File: pics/ellp0_9q0_1n0_001.png Graphic file (type png)
 
 <use pics/ellp0_9q0_1n0_001.png>
-Package pdftex.def Info: pics/ellp0_9q0_1n0_001.png used on input line 253.
+Package pdftex.def Info: pics/ellp0_9q0_1n0_001.png used on input line 251.
 (pdftex.def)             Requested size: 230.0431pt x 220.07465pt.
 
-<pics/ellp0_9q0_1n0_01.png, id=114, 623.32875pt x 599.23875pt>
+<pics/ellp0_9q0_1n0_01.png, id=111, 623.32875pt x 599.23875pt>
 File: pics/ellp0_9q0_1n0_01.png Graphic file (type png)
 
 <use pics/ellp0_9q0_1n0_01.png>
-Package pdftex.def Info: pics/ellp0_9q0_1n0_01.png used on input line 257.
+Package pdftex.def Info: pics/ellp0_9q0_1n0_01.png used on input line 255.
 (pdftex.def)             Requested size: 230.0431pt x 221.1571pt.
 
-<pics/ell0005.png, id=115, 625.33624pt x 598.235pt>
+<pics/ell0005.png, id=112, 625.33624pt x 598.235pt>
 File: pics/ell0005.png Graphic file (type png)
  <use pics/ell0005.png>
-Package pdftex.def Info: pics/ell0005.png used on input line 266.
+Package pdftex.def Info: pics/ell0005.png used on input line 264.
 (pdftex.def)             Requested size: 230.0431pt x 220.07465pt.
 
-<pics/ell0012.png, id=116, 623.32875pt x 599.23875pt>
+<pics/ell0012.png, id=113, 623.32875pt x 599.23875pt>
 File: pics/ell0012.png Graphic file (type png)
  <use pics/ell0012.png>
-Package pdftex.def Info: pics/ell0012.png used on input line 270.
+Package pdftex.def Info: pics/ell0012.png used on input line 268.
 (pdftex.def)             Requested size: 230.0431pt x 221.1571pt.
 
-[19 <./pics/ellp0_9q0_1n0_001.png> <./pics/ellp0_9q0_1n0_01.png>]
-<pics/ell075.png, id=123, 623.32875pt x 598.235pt>
+[18 <./pics/ellp0_9q0_1n0_001.png> <./pics/ellp0_9q0_1n0_01.png>]
+<pics/ell075.png, id=119, 623.32875pt x 598.235pt>
 File: pics/ell075.png Graphic file (type png)
  <use pics/ell075.png>
-Package pdftex.def Info: pics/ell075.png used on input line 277.
+Package pdftex.def Info: pics/ell075.png used on input line 275.
 (pdftex.def)             Requested size: 225.34383pt x 216.26813pt.
 
-<pics/ell015.png, id=124, 618.31pt x 598.235pt>
+<pics/ell015.png, id=120, 618.31pt x 598.235pt>
 File: pics/ell015.png Graphic file (type png)
  <use pics/ell015.png>
-Package pdftex.def Info: pics/ell015.png used on input line 281.
+Package pdftex.def Info: pics/ell015.png used on input line 279.
 (pdftex.def)             Requested size: 225.34383pt x 218.0299pt.
- [20 <./pics/ell0005.png> <./pics/ell0012.png> <./pics/ell075.png> <./pics/ell0
+ [19 <./pics/ell0005.png> <./pics/ell0012.png> <./pics/ell075.png> <./pics/ell0
 15.png>]
-<pics/dpp2_1q1.png, id=132, 618.31pt x 598.235pt>
+<pics/dpp2_1q1.png, id=129, 618.31pt x 598.235pt>
 File: pics/dpp2_1q1.png Graphic file (type png)
  <use pics/dpp2_1q1.png>
-Package pdftex.def Info: pics/dpp2_1q1.png used on input line 292.
+Package pdftex.def Info: pics/dpp2_1q1.png used on input line 290.
 (pdftex.def)             Requested size: 230.0431pt x 222.5758pt.
 
-<pics/dpp4q1n0_0008.png, id=133, 609.27625pt x 598.235pt>
+<pics/dpp4q1n0_0008.png, id=130, 609.27625pt x 598.235pt>
 File: pics/dpp4q1n0_0008.png Graphic file (type png)
 
 <use pics/dpp4q1n0_0008.png>
-Package pdftex.def Info: pics/dpp4q1n0_0008.png used on input line 296.
+Package pdftex.def Info: pics/dpp4q1n0_0008.png used on input line 294.
 (pdftex.def)             Requested size: 230.0431pt x 225.87112pt.
- [21 <./pics/dpp2_1q1.png> <./pics/dpp4q1n0_0008.png>] <pics/oss03.png, id=139,
- 1191.45125pt x 608.2725pt>
+ [20 <./pics/dpp2_1q1.png> <./pics/dpp4q1n0_0008.png>] <pics/p21nsas.png, id=13
+6, 621.32124pt x 598.235pt>
+File: pics/p21nsas.png Graphic file (type png)
+ <use pics/p21nsas.png>
+Package pdftex.def Info: pics/p21nsas.png used on input line 305.
+(pdftex.def)             Requested size: 230.0431pt x 221.48953pt.
+
+<pics/p11.png, id=137, 621.32124pt x 598.235pt>
+File: pics/p11.png Graphic file (type png)
+ <use pics/p11.png>
+Package pdftex.def Info: pics/p11.png used on input line 309.
+(pdftex.def)             Requested size: 230.0431pt x 221.48953pt.
+
+<pics/msp2_1q1n0_002.png, id=138, 631.35875pt x 608.2725pt>
+File: pics/msp2_1q1n0_002.png Graphic file (type png)
+
+<use pics/msp2_1q1n0_002.png>
+Package pdftex.def Info: pics/msp2_1q1n0_002.png used on input line 316.
+(pdftex.def)             Requested size: 225.34383pt x 217.10307pt.
+
+<pics/msp1_8q0_5n0_01.png, id=139, 631.35875pt x 608.2725pt>
+File: pics/msp1_8q0_5n0_01.png Graphic file (type png)
+
+<use pics/msp1_8q0_5n0_01.png>
+Package pdftex.def Info: pics/msp1_8q0_5n0_01.png used on input line 320.
+(pdftex.def)             Requested size: 225.34383pt x 217.10307pt.
+ [21 <./pics/p21nsas.png> <./pics/p11.png>]
+<pics/oss03.png, id=145, 1191.45125pt x 608.2725pt>
 File: pics/oss03.png Graphic file (type png)
  <use pics/oss03.png>
-Package pdftex.def Info: pics/oss03.png used on input line 312.
+Package pdftex.def Info: pics/oss03.png used on input line 330.
 (pdftex.def)             Requested size: 469.47049pt x 239.67563pt.
 
-[22] <pics/oss05.png, id=143, 1191.45125pt x 608.2725pt>
+[22 <./pics/msp2_1q1n0_002.png> <./pics/msp1_8q0_5n0_01.png>]
+<pics/oss05.png, id=151, 1191.45125pt x 608.2725pt>
 File: pics/oss05.png Graphic file (type png)
  <use pics/oss05.png>
-Package pdftex.def Info: pics/oss05.png used on input line 317.
+Package pdftex.def Info: pics/oss05.png used on input line 335.
 (pdftex.def)             Requested size: 469.47049pt x 239.67563pt.
 
-<pics/oss075.png, id=144, 1185.42876pt x 608.2725pt>
+<pics/oss075.png, id=152, 1185.42876pt x 608.2725pt>
 File: pics/oss075.png Graphic file (type png)
  <use pics/oss075.png>
-Package pdftex.def Info: pics/oss075.png used on input line 322.
+Package pdftex.def Info: pics/oss075.png used on input line 340.
 (pdftex.def)             Requested size: 469.47049pt x 240.89151pt.
 
 [23 <./pics/oss03.png> <./pics/oss05.png>]
-<pics/oss01.png, id=150, 1185.42876pt x 608.2725pt>
+<pics/oss01.png, id=158, 1185.42876pt x 608.2725pt>
 File: pics/oss01.png Graphic file (type png)
  <use pics/oss01.png>
-Package pdftex.def Info: pics/oss01.png used on input line 327.
+Package pdftex.def Info: pics/oss01.png used on input line 345.
 (pdftex.def)             Requested size: 469.47049pt x 240.89151pt.
 
-<pics/AAAA.png, id=151, 390.45876pt x 266.9975pt>
+<pics/AAAA.png, id=159, 390.45876pt x 266.9975pt>
 File: pics/AAAA.png Graphic file (type png)
  <use pics/AAAA.png>
-Package pdftex.def Info: pics/AAAA.png used on input line 332.
+Package pdftex.def Info: pics/AAAA.png used on input line 350.
 (pdftex.def)             Requested size: 469.47049pt x 321.03906pt.
- [24 <./pics/oss075.png> <./pics/oss01.png>] [25 <./pics/AAAA.png>] [26
+ [24 <./pics/oss075.png> <./pics/oss01.png>]
+<pics/minicyc.png, id=165, 618.31pt x 598.235pt>
+File: pics/minicyc.png Graphic file (type png)
+ <use pics/minicyc.png>
+Package pdftex.def Info: pics/minicyc.png used on input line 359.
+(pdftex.def)             Requested size: 230.0431pt x 222.5758pt.
 
-] [27
+<pics/minisens.png, id=166, 618.31pt x 605.26125pt>
+File: pics/minisens.png Graphic file (type png)
+ <use pics/minisens.png>
+Package pdftex.def Info: pics/minisens.png used on input line 363.
+(pdftex.def)             Requested size: 230.0431pt x 225.18994pt.
 
-]
-(./diploma.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
+\T2A/cmr/m/n/14.4 Ри-су-нок 3.41 --- ФСЧ цик-ла,
+ []
+
+[25 <./pics/AAAA.png>] <pics/bigcyc.png, id=172, 615.29875pt x 598.235pt>
+File: pics/bigcyc.png Graphic file (type png)
+
+<use pics/bigcyc.png>
+Package pdftex.def Info: pics/bigcyc.png used on input line 370.
+(pdftex.def)             Requested size: 225.34383pt x 219.08879pt.
+ <pics/sss.png, id=173, 622.325pt x 605.26125pt>
+File: pics/sss.png Graphic file (type png)
+
+<use pics/sss.png>
+Package pdftex.def Info: pics/sss.png used on input line 374.
+(pdftex.def)             Requested size: 225.34383pt x 219.16838pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--376
+\T2A/cmr/m/n/14.4 Ри-су-нок 3.43 --- ФСЧ цик-ла,
+ []
+
+[26 <./pics/minicyc.png> <./pics/minisens.png> <./pics/bigcyc.png> <./pics/sss.
+png>] [27
+
+] [28
+
+] (./diploma.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11242 strings out of 493013
- 188822 string characters out of 6135683
- 260960 words of memory out of 5000000
- 14561 multiletter control sequences out of 15000+600000
+ 11537 strings out of 493013
+ 193415 string characters out of 6135683
+ 265762 words of memory out of 5000000
+ 14844 multiletter control sequences out of 15000+600000
  11117 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,10n,40p,1289b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -957,10 +1070,10 @@ nts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.p
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfrm1440.pfb>
-Output written on diploma.pdf (27 pages, 2087663 bytes).
+Output written on diploma.pdf (28 pages, 2172081 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 224 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
